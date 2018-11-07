@@ -8,8 +8,6 @@ defmodule MyList do
     [func.(h) | map(t, func)]
   end
 
-  fun = fn
-
   def sum([], fun) do
     0
   end

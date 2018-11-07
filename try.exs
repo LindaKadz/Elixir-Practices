@@ -4,7 +4,7 @@ defmodule AddChar do
     raise "We cannot add an integer to the list"
   end
 
-  def caesar([h | t], n) when n < "z" do
+  def caesar([h | t], n) do
     [h ++ n | caesar(t)]
   end
 end

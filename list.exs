@@ -1,13 +1,17 @@
 defmodule Sort do
-  def max([first | [second | []]]) do
-    smaller(first, second)
+  def find_max([], current) do
+     current
   end
 
-  def max([first | [second | tail]]) do
-      max[smaller(first, second) | tail]
+  def find_max([h | t], current) when h > current do
+    find_max(t, h)
   end
 
-  def large(e1, e2) do
-    if e1 > e2 do e1 else e2 end
+  def find_max([_h | t], current) do
+    find_max(t, current)
+  end
+
+  def max(list = [h | t]) do
+     find_max(list, h)
   end
 end
