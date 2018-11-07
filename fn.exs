@@ -1,6 +1,6 @@
 #Defining functions that do various things
 list_concat.([:a, :b], [:c, :d]) #=> [:a, :b, :c, :d]
-   list_concat = fn e, f -> [:a, :b, :c, :d] end
+   list_concat = fn e, f -> e ++ f end
 sum.(1, 2, 3) #=> 6
    sum = fn a, b, c -> a + b + c end
 pair_tuple_to_list.( { 1234, 5678 } ) #=> [ 1234, 5678 ]
