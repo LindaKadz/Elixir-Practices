@@ -1,3 +1,4 @@
+#getting the double, triple and quadriple of a number
 defmodule Times do
   def double(n) do
     n * 2
@@ -6,6 +7,6 @@ defmodule Times do
   def triple(n), do: n * 3
 
   def quadriple(n) do
-    Times.double(n)
+    double(n) * 2
   end
 end

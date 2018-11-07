@@ -1,3 +1,4 @@
+#Creating the Enum.all? function 
 defmodule Titi do
   def all([], _func) do
     true
@@ -17,5 +18,5 @@ defmodule Titi do
 
   def all?(list, con) do
     all(list, con) |> check_true(true)
-  end 
+  end
 end

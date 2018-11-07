@@ -1,3 +1,4 @@
+#Creating a function that maps and sums the results to one figure
 defmodule MyList do
   def map([], func) do
     []
@@ -7,7 +8,7 @@ defmodule MyList do
     [func.(h) | map(t, func)]
   end
 
-  fun = fn 
+  fun = fn
 
   def sum([], fun) do
     0

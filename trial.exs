@@ -1,3 +1,4 @@
+#how to open a file through the terminal
 handle_open = fn
   {:ok, file} -> "Read this #{IO.read(file, :line)}"
   {_, error} -> "No such file #{:file.format_error(error)}"
